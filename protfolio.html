@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Sadman Sami - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <style>
+        body { background-color: #000; color: #fff; }
+        .transition { transition: all 0.5s ease-in-out; }
+        .image-container { display: flex; justify-content: center; }
+        .image-container img { width: 350px; height: 309px; border-radius: 10px; }
+        .highlight { color: #ccc; font-size: 1.3rem; font-weight: bold; }
+        h2, h3 { color: #ddd; }
+        section { border-bottom: 1px solid #444; padding-bottom: 20px; margin-bottom: 20px; }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #facc15;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <nav class="bg-gray-900 p-4 flex justify-between items-center transition">
+        <h1 class="text-4xl font-extrabold text-center">Md. Sadman Sami</h1>
+        <div>
+            <a href="#about" class="mx-2 nav-link">About</a>
+            <a href="#education" class="mx-2 nav-link">Education</a>
+            <a href="#skills" class="mx-2 nav-link">Skills</a>
+            <a href="#professional_interest" class="mx-2 nav-link">Professional Interest</a>
+            <a href="#projects" class="mx-2 nav-link">Projects</a>
+            <a href="#extracurricular" class="mx-2 nav-link">Extracurricular</a>
+            <a href="#training" class="mx-2 nav-link">Training</a>
+            <a href="#certifications" class="mx-2 nav-link">Certifications</a>
+            <a href="#references" class="mx-2 nav-link">References</a>
+            <a href="#contact" class="mx-2 nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <header class="text-center py-20 bg-gray-800 transition">
+        <h2 class="highlight">Industrial & Production Engineer</span></h2><h4>Expected Graduation: June, 2025</span></h4>
+        <p class="mt-4">Optimizing processes, enhancing productivity, and driving <span class="highlight">data-informed decision-making</span>.</p>
+        <div class="image-container mt-6 transition">
+            <img src="your-image.jpg" alt="Md. Sadman Sami">
+        </div>
+    </header>
+
+    <section id="education" class="p-10 text-center transition">
+        <h2 class="text-3xl font-semibold">Education</h2>
+        <div class="mt-6 text-lg">
+            <p><strong>B.Sc. in <span class="highlight">Industrial & Production Engineering (IPE)</span> - SUST (2025)</strong></p>
+            <p>CGPA: <span class="text-yellow-400">3.72 / 4.0</span></p>
+            <p><strong>HSC in <span class="highlight">Science</span> - Dhaka College (2019)</strong></p>
+            <p>GPA: <span class="text-yellow-400">5.0 / 5.0</span></p>
+            <p><strong>SSC in <span class="highlight">Science</span> - Ideal School & College (2017)</strong></p>
+            <p>GPA: <span class="text-yellow-400">5.0 / 5.0</span></p>
+        </div>
+    </section>
+
+    <section id="skills" class="p-10 bg-gray-800 text-center transition">
+        <h2 class="text-3xl font-semibold">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6 text-center">
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Python (Pandas, NumPy, Matplotlib, Seaborn)</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Power BI & Data Analytics</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Supply Chain Management</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Quality Control Management</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Industrial Management</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">AutoCAD, SolidWorks</div>
+        </div>
+    </section>
+
+    <section id="professional_interest" class="p-10 bg-gray-800 text-center transition">
+        <h2 class="text-3xl font-semibold">Professional Interest</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 text-center">
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Business Data Analytics</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Supply Chain Management</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Quality Control</div>
+            <div class="bg-gray-700 p-4 rounded shadow highlight">Production Planning</div>
+        </div>
+    </section>
+
+    <section id="training" class="p-10 text-center transition">
+        <h2 class="text-3xl font-semibold">Training</h2>
+        <p class="highlight">Data Manipulation with Pandas | Intermediate Python | System Modeling and Simulation | CAD (AutoCAD, SolidWorks)</p>
+    </section>
+
+    <section id="certifications" class="p-10 bg-gray-800 text-center transition">
+        <h2 class="text-3xl font-semibold">Certifications</h2>
+        <p class="highlight">Certified in Data Analysis | Advanced Python Programming | Lean Six Sigma Yellow Belt</p>
+    </section>
+
+    <section id="projects" class="p-10 text-center">
+        <h2 class="text-3xl font-semibold transition">Projects</h2>
+        <div class="mt-6 space-y-4">
+            <div class="bg-gray-700 p-4 rounded shadow transition">
+                <h3 class="text-xl font-bold">Prediction & Optimization of <span class="highlight">Weld Strength</span></h3>
+                <p>Utilized <span class="highlight">Machine Learning</span> and <span class="highlight">Grey Taguchi Method</span> to enhance FDM-printed PLA samples.</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded shadow transition">
+                <h3 class="text-xl font-bold">Queueing System Analysis of a <span class="highlight">Pharmacy</span></h3>
+                <p>Used <span class="highlight">ARENA software</span> for efficiency study and process optimization.</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded shadow transition">
+                <h3 class="text-xl font-bold">Fire-Detecting & Fighting <span class="highlight">Robot</span></h3>
+                <p>Developed and presented at the <span class="highlight">PDD seminar</span>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="extracurricular" class="p-10 bg-gray-700 text-center transition">
+        <h2 class="text-3xl font-semibold">Extracurricular Activities</h2>
+        <p class="highlight">Champion at "Case Quest 1.0" (Team Leader) | Media & Publication Lead | 1st Runners Up in GDN Case Competition</p>
+    </section>
+
+    <section id="references" class="p-10 bg-gray-700 text-center transition">
+        <h2 class="text-3xl font-semibold">References</h2>
+        <p><span class="highlight">Dr. Mohammad Muhshin Aziz Khan</span> - Professor, IPE, SUST | +8801611012105</p>
+        <p><span class="highlight">Dr. Choudhury Abul Anam Rashed</span> - Professor, IPE, SUST | +8801727535997</p>
+    </section>
+
+    <section id="contact" class="p-10 bg-gray-900 text-center transition">
+        <h2 class="text-3xl font-semibold">Contact Me</h2>
+        <p class="mt-4">Feel free to reach out for collaborations or opportunities.</p>
+        <p>Email: <a href="mailto:sadmansami3711@gmail.com" class="text-yellow-400">sadmansami3711@gmail.com</a></p>
+        <p>Phone: +8801678532753</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/md-sadman-sami-ipesust" class="text-yellow-400">LinkedIn Profile</a></p>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center p-4 mt-6 transition">
+        &copy; 2025 Md. Sadman Sami. All Rights Reserved.
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.transition', { duration: 1000, origin: 'bottom', distance: '50px', easing: 'ease-in-out', interval: 200 });
+    </script>
+</body>
+</html>
